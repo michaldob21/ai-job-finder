@@ -15,13 +15,13 @@ for entry in feed.entries[:5]:
     description = entry.summary
 
     prompt = f"""
-    Oceń dopasowanie oferty pracy do studenta 4 roku Inżynierii Produkcji i Jakości AGH.
+Oceń dopasowanie oferty pracy do studenta 4 roku Inżynierii Produkcji i Jakości AGH.
 
-    Oferta:
-    {description}
+Oferta:
+{description}
 
-    Oceń dopasowanie 0-100 i napisz krótkie uzasadnienie.
-    """
+Oceń dopasowanie w skali 0–100 i podaj krótkie uzasadnienie.
+"""
 
     response = client.chat.completions.create(
         model="gpt-4.1-mini",
