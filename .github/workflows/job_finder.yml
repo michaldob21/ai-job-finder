@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install feedparser
+          pip install feedparser openai
 
       - name: Run job finder
         run: |
